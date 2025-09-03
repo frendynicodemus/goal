@@ -1,0 +1,27 @@
+print("hallo! namaku milo.. dengan siapa aku berbicara?")
+name = input("namamu: ")
+print(f"hai {name}, senang berkenalan denganmu, boleh aku tau berapa umurmu?")
+umur = input("umur: ")
+umurMilo = 3
+selisihUmur = int(umur) - umurMilo
+print(f"kita beda {selisihUmur} tahun, aku baru berumur {umurMilo} tahun")
+print("ayo kita main tebak-tebakan!")
+print("hewan apa yang memiliki belalai yang panjang?")
+jawabanTebakan = input(
+    "sebutkan nama hewan! contoh: gajah, ular, singa? ").lower()
+if jawabanTebakan == "gajah":
+    print(f"{jawabanTebakan} adalah jawaban yang benar!")
+else:
+    print("jawabanmu salah, gajah adalah jawaban yang benar")
+print("sebutkan 3 nama sahabatmu!")
+sahabat = input().lower().split()
+print(f"apa kau memiliki teman lain di luar dari {sahabat}?")
+tambahSahabat = input("teman lainnya: ").lower().split()
+sahabat += tambahSahabat
+print(f"siapa dari {sahabat} yang paling dekat denganmu?")
+sahabatTerdekat = input().lower()
+if sahabatTerdekat == sahabat[0]:
+    print(f"{sahabat[0]} memang orang yang baik")
+else:
+    print(
+        f"saya tidak yakin dengan dia, mungkin kamu harus lebih memperhatikan {sahabat[0]} karena dia orang pertama yang kamu sebutkan namanya")
