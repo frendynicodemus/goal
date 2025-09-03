@@ -8,12 +8,12 @@ print(f"kita beda {selisihUmur} tahun, aku baru berumur {umurMilo} tahun")
 print("ayo kita main tebak-tebakan!")
 print("hewan apa yang memiliki belalai yang panjang?")
 jawabanTebakan = input(
-    "sebutkan nama hewan! contoh: gajah, ular, singa? ").lower()
+    "sebutkan nama hewan! pilih: gajah, ular, singa? ").lower()
 if jawabanTebakan == "gajah":
     print(f"{jawabanTebakan} adalah jawaban yang benar!")
 else:
     print("jawabanmu salah, gajah adalah jawaban yang benar")
-print("sebutkan 3 nama sahabatmu!")
+print("sebutkan 3 nama sahabatmu! (jangan pakai koma)")
 sahabat = input().lower().split()
 print(f"apa kau memiliki teman lain di luar dari {sahabat}?")
 tambahSahabat = input("teman lainnya: ").lower().split()
