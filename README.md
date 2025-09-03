@@ -1,2 +1,2 @@
-# goal
-my goal in 2025
+# Belajar Coding
+belajar coding dari nol
