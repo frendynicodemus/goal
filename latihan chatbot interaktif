@@ -6,13 +6,12 @@ umurMilo = 3
 selisihUmur = int(umur) - umurMilo
 print(f"kita beda {selisihUmur} tahun, aku baru berumur {umurMilo} tahun")
 print("ayo kita main tebak-tebakan!")
-print("hewan apa yang memiliki belalai yang panjang?")
-jawabanTebakan = input(
-    "sebutkan nama hewan! pilih: gajah, ular, singa? ").lower()
-if jawabanTebakan == "gajah":
-    print(f"{jawabanTebakan} adalah jawaban yang benar!")
-else:
-    print("jawabanmu salah, gajah adalah jawaban yang benar")
+jawabanTebakan = "gajah"
+while True:
+    if input("hewan apa yang memiliki belalai yang panjang? ").lower() == jawabanTebakan:
+        print("Benar Sekali!")
+        break
+    print("kurang tepat, coba lagi!")
 print("sebutkan 3 nama sahabatmu! (jangan pakai koma)")
 sahabat = input().lower().split()
 print(f"apa kau memiliki teman lain di luar dari {sahabat}?")
