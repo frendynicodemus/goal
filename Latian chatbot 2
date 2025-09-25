@@ -1,0 +1,28 @@
+print("Haaiiiii.. aku Milo.. Dengan siapa di sana?")
+nama = input("nama saya : ")
+print(f"Haiii {nama}.. Senang berkenalan denganmu.. boleh aku tau berapa umurmu?")
+umur = input("umur saya: ")
+umur_milo = 3
+selisih_umur = int(umur) - umur_milo
+print(
+    f"kita selisih {selisih_umur} tahun.. aku baru berumur {umur_milo} tahun")
+print("ayo kita main tebakan! aku hanya bisa bergerak maju dan tidak bisa mundur sedikitpun, seiring bertambahnya aku, keberadaanmu akan semakin berkurang.. apakah aku?")
+while True:
+    jawabanTebakan = "waktu"
+    if input("jawaban: ").lower() == jawabanTebakan:
+        print("Benar!!!")
+        break
+    else:
+        print("kurang tepat.. coba lagi!")
+print("kamu pasti cukup pintar di sekolahmu.. coba sebutkan 3 nama teman terbaikmu")
+temanBaik = input(
+    "sebutkan 3 nama: (gunakan spasi untuk pemisah, jangan gunakan koma) ").lower().split()
+print("tambahkan 1 nama temanmu lagi")
+tambahTeman = input("tambah nama teman: ").lower().split()
+temanBaik += tambahTeman
+print(f"di antara {temanBaik}.. siapa yang menurutmu paling dekat denganmu?")
+if input("nama teman terbaik: ") == temanBaik[0]:
+    print("dia pasti orang yang baik")
+else:
+    print(
+        f"kupikir {temanBaik[0]} yang akan kau sebutkan, karena nama dia yang pertama kamu sebutkan")
