@@ -1,0 +1,18 @@
+print("===== Program Kalkulator Sederhana =====")
+print("1. Hitung Luas Lingkaran")
+print("2. Konversi Celcius ke Fahrenheit")
+
+pilihan = int(input("pilih menu (1/2): "))
+
+if pilihan == 1:
+    from math import pi
+    jariJariLingkaran = int(input("masukkan nilai jari-jari: "))
+    print(f"Luas Lingkaran: {pi * jariJariLingkaran**2:.2f}")
+
+elif pilihan == 2:
+    Celcius = int(input("masukkan nilai Celcius: "))
+    print(
+        f"jika suhu {Celcius} derajat celcius, maka artinya: {(Celcius * 9/5) + 32} derajat Fahrenheit")
+
+else:
+    print("tidak ada dalam pilihan")
