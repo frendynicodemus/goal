@@ -1,0 +1,22 @@
+def hitungStatistik(x): #huruf "x" merupakan variable random, bisa ditulis apa saja
+    rata_rata = sum(x) / len(x)
+    nilai_tertinggi = max(x)
+    nilai_terendah = min(x)
+
+    return rata_rata, nilai_tertinggi, nilai_terendah 
+
+
+data_nilai = [85, 90, 78, 92, 88, 76, 95, 89, 84, 91]
+InputNilaiBaru = input(
+    "tambahan nilai baru (dipisah dengan spasi, tanpa koma): ").split() #cara menambah list (masih berupa string)
+InputNilaiBaru = [int(x) for x in InputNilaiBaru] #mengconvert list string ke interger
+data_nilai += InputNilaiBaru
+
+print("Data Nilai Siswa:", data_nilai)
+
+mean, high, low = hitungStatistik(data_nilai) #berhubungan sesuai dengan urutan di return
+
+print("===== Hasil Statistik =====")
+print(f"rata-rata nilai: {mean:.2f}")
+print(f"nilai tertinggi: {high}")
+print(f"nilai terendah: {low}")
