@@ -17,6 +17,6 @@ print("Data Nilai Siswa:", data_nilai)
 mean, high, low = hitungStatistik(data_nilai) #berhubungan sesuai dengan urutan di return
 
 print("===== Hasil Statistik =====")
-print(f"rata-rata nilai: {mean:.2f}")
+print(f"rata-rata nilai: {mean:.2f}") #membatasi nilai desimal (2 angka di belakang koma)
 print(f"nilai tertinggi: {high}")
 print(f"nilai terendah: {low}")
