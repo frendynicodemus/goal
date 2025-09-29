@@ -1,0 +1,11 @@
+print("===== SIMULASI PROCESSING DATA =====")
+Suhu = [25, 30, 18, 37, 32, 28, 27]
+tambahSuhu = input(
+    "masukkan suhu terbaru (jangan pakai koma, pisahkan dengan spasi) :  ").split() #tidak bisa langsung mengconvert list ke int
+inputSuhu = [int(x) for x in tambahSuhu] #cara mengconvert list ke int
+dataSuhu = Suhu + inputSuhu
+print("data suhu harian", dataSuhu)
+rata_rata = sum(dataSuhu) / len(dataSuhu)
+print(f"suhu rata-rata: {rata_rata} derajat Celcius")
+dataFahrenheit = [(u * 9 / 5) + 32 for u in dataSuhu]  #pemanfaatan "for & in" untuk mengubah / mengconvert keseluruhan data di dalam list
+print(f"suhu dalam Fahrenheit = {dataFahrenheit}")
